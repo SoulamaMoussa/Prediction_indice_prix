@@ -1,6 +1,3 @@
-# Prediction_indice_prix
-Prédiction de l'indice des prix
-
 ---
 title: "Prévision de l'indice des prix au Burkina Faso"
 ---
