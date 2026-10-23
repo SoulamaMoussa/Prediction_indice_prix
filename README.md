@@ -41,7 +41,7 @@ Estimation d'une tendance par régression linéaire sur une portion de la série
 
 Analyse des résidus et comparaison des erreurs de prévision ainsi que de la couverture des intervalles.
 
-## Résultats du rapport académique
+## Résultats
 
 Le rapport fait ressortir une tendance globalement croissante de l'indice sur la période étudiée et ne relève pas de saisonnalité nette.
 
