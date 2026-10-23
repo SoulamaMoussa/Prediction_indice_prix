@@ -1,9 +1,7 @@
 #########################################################################
 ######## PROJET: ETUDE DE L'INDICE DES PRIX A LA CONSOMMATION
 ########
-######## Groupe 1 :  SOULAMA Moussa
-########             KABORE Oumar
-########              NANA Nestor Cedric
+######## Auteur :  SOULAMA Moussa
 #########################################################################
 
 
