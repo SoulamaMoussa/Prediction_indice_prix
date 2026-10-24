@@ -1,14 +1,12 @@
 # Prévision de l'indice des prix à la consommation au Burkina Faso
 
-Comparaison de trois méthodes de prévision (lissage exponentiel, régression, ARIMA) sur l'indice mensuel des prix, avec **R**.
-
 ## En bref
 
 - **Question :** quelle méthode statistique prévoit le mieux l'évolution de l'indice des prix sur les mois suivants ?
 - **Données :** indice global des prix à la consommation (base 100 en 2014), mensuel, janvier 2015 – mai 2023, source INSD.
 - **Méthodes :** lissage exponentiel double, régression linéaire sur une sous-période, modèle ARIMA.
 - **Évaluation :** apprentissage sur janvier 2015 – décembre 2022 (96 mois), test sur janvier – mai 2023 (5 mois).
-- **Résultat principal :** sur ce jeu de test, le lissage exponentiel double a la plus faible erreur quadratique moyenne (4,98).
+- **Résultat principal :** sur ce jeu de test, le lissage exponentiel double a la plus faible erreur quadratique moyenne.
 
 ## Contexte
 
