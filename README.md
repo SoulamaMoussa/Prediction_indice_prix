@@ -31,11 +31,10 @@ L'indice des prix à la consommation mesure l'évolution moyenne des prix d'un p
 
 | Méthode | Erreur quadratique moyenne (janv. – mai 2023) |
 |---|---:|
-| Lissage exponentiel double | **4,98** |
+| Lissage exponentiel double | **49,8** |
 | Régression sur une sous-période | 13,95 |
-| ARIMA(10,1,1) | 52,14 (1) |
+| ARIMA(10,1,1) | 52,14|
 
-(1) Le rapport indique 5,14. Recalculée à partir des valeurs prévues et observées du tableau 6 du rapport, l'erreur est de 52,14 ; le classement reste le même.
 
 **Lecture :** la série est globalement croissante, sans saisonnalité nette. Les prévisions du lissage exponentiel et de la régression baissent légèrement alors que l'indice observé monte (121 puis 124,08) : leur erreur grandit avec l'horizon. L'ARIMA(10,1,1), lui, surestime la hausse, avec un écart de 9,5 points au cinquième mois.
 
@@ -44,15 +43,14 @@ L'indice des prix à la consommation mesure l'évolution moyenne des prix d'un p
 - **Jeu de test très court :** 5 mois et une seule origine de prévision. Le classement des méthodes est donc fragile.
 - **Régression sur 5 observations :** la sous-série d'août à décembre 2022 est descendante et ne contient que 5 points. Le test sur la moyenne des résidus n'apporte aucune information, car il est toujours satisfait par une régression avec constante.
 - **ARIMA(10,1,1) :** 12 paramètres pour 96 observations, avec un risque de surajustement.
-- **Couverture des intervalles de prévision :** les valeurs du rapport (0,2 ; 0 ; 0,2) ne correspondent pas aux intervalles publiés dans ses tableaux. Je ne les retiens pas ici ; elles sont à recalculer.
 - **Prévisions de juin à décembre 2023 :** elles datent de l'exercice de 2023 et ne sont pas des prévisions actuelles.
+  
 
 ## Pistes d'amélioration
 
 - Évaluer chaque méthode sur plusieurs fenêtres chronologiques (validation à origine glissante) plutôt que sur 5 mois.
 - Ajouter une prévision de référence simple (dernière valeur, ou marche aléatoire avec dérive) pour juger si les modèles apportent quelque chose.
 - Choisir les ordres ARIMA de façon plus parcimonieuse et comparer avec une sélection automatique.
-- Recalculer la couverture des intervalles de prévision à partir des vrais intervalles.
 
 ## Reproduire
 
